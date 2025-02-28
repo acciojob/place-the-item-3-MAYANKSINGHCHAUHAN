@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        /* Holder Styling */
+        #holder {
+            display: flex;
+            justify-content: space-evenly; /* Evenly spaces items across the row */
+            flex-wrap: wrap; /* Moves items to the next row instead of squashing */
+            width: 100%; /* Full width */
+            padding: 10px; /* Adds slight spacing from edges */
+            background-color: lightgray; /* Just for visualization */
+        }
 
+        /* Item Styling */
+        .item {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px; /* Optional: for rounded corners */
+        }
+    </style>
+</head>
 <body>
-<div class="holder">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div id="holder">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
 
 </body>
-
 </html>
